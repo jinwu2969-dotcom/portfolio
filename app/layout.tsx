@@ -48,6 +48,9 @@ export default function RootLayout({
       lang="en"
       className={`${dmSans.variable} ${ibmPlexSerif.variable} ${plusJakarta.variable}`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var t=localStorage.getItem('theme')||'dark';if(t==='dark')document.documentElement.classList.add('dark');})();` }} />
+      </head>
       <body className="min-h-screen flex flex-col text-gray-900 transition-colors duration-300" style={{ cursor: "none" }}>
         <ThemeProvider>
           <CustomCursor />
