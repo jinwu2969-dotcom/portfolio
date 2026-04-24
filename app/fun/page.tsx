@@ -1,39 +1,114 @@
-import type { Metadata } from "next";
-import ScrollReveal from "@/components/ScrollReveal";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Fun — Jinyu Wu",
-  description: "Side projects, articles, and creative explorations by Jinyu Wu.",
-};
+import Link from "next/link";
+import { useState } from "react";
+import { Copy } from "lucide-react";
+
+const EMAIL = "jinwu2969@gmail.com";
 
 export default function FunPage() {
-  return (
-    <div className="pt-32 pb-24 px-6 md:px-10 max-w-6xl mx-auto">
-      <div className="max-w-2xl">
-        <ScrollReveal>
-          <p className="text-xs font-semibold tracking-widest uppercase text-[var(--text-label)] mb-6">
-            Fun
-          </p>
-        </ScrollReveal>
-        <ScrollReveal delay={0.1}>
-          <h1 className="text-4xl md:text-5xl font-semibold text-black leading-tight mb-8">
-            Projects &amp; Articles
-          </h1>
-        </ScrollReveal>
-        <ScrollReveal delay={0.2}>
-          <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-12">
-            Side projects, creative explorations, and things I find interesting outside of
-            client work.
-          </p>
-        </ScrollReveal>
+  const [toast, setToast] = useState(false);
 
-        {/* Placeholder content */}
-        <ScrollReveal delay={0.3}>
-          <div className="rounded-2xl border border-dashed border-gray-200 p-12 text-center">
-            <p className="text-[var(--text-label)] text-sm">Content coming soon</p>
-          </div>
-        </ScrollReveal>
+  const copyEmail = () => {
+    navigator.clipboard.writeText(EMAIL);
+    setToast(true);
+    setTimeout(() => setToast(false), 3000);
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative">
+
+      {/* Toast */}
+      {toast && (
+        <div
+          style={{
+            position: "fixed",
+            top: "88px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            background: "var(--text-primary)",
+            color: "var(--bg-page)",
+            fontSize: "14px",
+            fontWeight: 450,
+            padding: "8px 20px",
+            borderRadius: "100px",
+            zIndex: 100,
+            whiteSpace: "nowrap",
+          }}
+        >
+          Copied to clipboard
+        </div>
+      )}
+
+      {/* Back button */}
+      <div style={{ position: "absolute", top: "88px", left: "40px" }}>
+        <Link
+          href="/"
+          style={{
+            fontSize: "14px",
+            fontWeight: 400,
+            color: "var(--text-label)",
+            textDecoration: "none",
+            transition: "color 0.2s ease",
+          }}
+          onMouseEnter={e => (e.currentTarget.style.color = "var(--text-primary)")}
+          onMouseLeave={e => (e.currentTarget.style.color = "var(--text-label)")}
+        >
+          ← Back
+        </Link>
       </div>
+
+      {/* Content */}
+      <h1
+        style={{
+          fontSize: "24px",
+          fontWeight: 400,
+          letterSpacing: "-0.3px",
+          color: "var(--text-primary)",
+          marginBottom: "16px",
+        }}
+      >
+        🧑‍🍳 Still cooking...
+      </h1>
+
+      <p
+        style={{
+          fontSize: "16px",
+          color: "var(--text-secondary)",
+          maxWidth: "420px",
+          lineHeight: 1.6,
+          marginBottom: "12px",
+        }}
+      >
+        I am still working on the nitty gritty of this project. Be sure to come back and check it out!
+      </p>
+
+      <p style={{ fontSize: "16px", color: "var(--text-secondary)", lineHeight: 1.6 }}>
+        If you have any questions, please contact{" "}
+        <a
+          href={`mailto:${EMAIL}`}
+          style={{ color: "var(--text-primary)", textDecoration: "none" }}
+        >
+          {EMAIL}
+        </a>
+        <button
+          onClick={copyEmail}
+          title="Copy email"
+          style={{
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: "0 0 0 6px",
+            color: "var(--text-label)",
+            verticalAlign: "middle",
+            lineHeight: 1,
+          }}
+          onMouseEnter={e => (e.currentTarget.style.color = "var(--text-primary)")}
+          onMouseLeave={e => (e.currentTarget.style.color = "var(--text-label)")}
+        >
+          <Copy size={14} strokeWidth={1.5} />
+        </button>
+      </p>
     </div>
   );
 }
