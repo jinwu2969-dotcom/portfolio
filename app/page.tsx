@@ -90,13 +90,15 @@ export default function HomePage() {
                 </div>
 
                 {/* Image area */}
-                <div className="relative mx-6 rounded-2xl overflow-hidden bg-[var(--bg-surface-2)] h-72 md:h-96">
+                <div
+                  className="relative mx-6 rounded-2xl overflow-hidden h-72 md:h-96"
+                  style={{ background: project.slug === "eventeny-event-page" ? "#C2D4D0" : "var(--bg-surface-2)" }}
+                >
                   {/* Image */}
                   <img
                     src={project.image}
                     alt={project.title}
-                    className={`w-full h-full object-cover transition-transform duration-500 ${project.slug === "guest-management" ? "scale-105 group-hover:scale-110" : "group-hover:scale-105"}`}
-                    style={project.slug === "eventeny-event-page" ? { objectPosition: "center bottom" } : undefined}
+                    className={`w-full h-full transition-transform duration-500 ${project.slug === "eventeny-event-page" ? "object-contain group-hover:scale-105" : `object-cover ${project.slug === "guest-management" ? "scale-105 group-hover:scale-110" : "group-hover:scale-105"}`}`}
                   />
 
                   {/* Hover: circular buttons */}
