@@ -28,7 +28,7 @@ const projects = [
     hoverTitle: "Agentic Migration Wizard",
     tags: ["Agentic Flow", "API Connection"],
     date: "April, 2026",
-    image: "https://framerusercontent.com/images/JJjXW3ucGTNwzob0Rb0OVZxSIs0.png?width=1120&height=908",
+    image: "/migration-wizard-cover.png",
   },
   {
     slug: "bawbab-delivery-navigation",
