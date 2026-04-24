@@ -83,7 +83,7 @@ export default function SmartDataMigrationPage() {
         I am still working on the nitty gritty of this project. Be sure to come back and check it out!
       </p>
 
-      <p style={{ fontSize: "15px", color: "var(--text-label)", lineHeight: 1.6 }}>
+      <p style={{ fontSize: "16px", color: "var(--text-secondary)", lineHeight: 1.6 }}>
         If you have any questions, please contact{" "}
         <a
           href={`mailto:${EMAIL}`}
