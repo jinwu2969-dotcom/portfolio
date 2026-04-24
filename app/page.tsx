@@ -96,6 +96,7 @@ export default function HomePage() {
                     src={project.image}
                     alt={project.title}
                     className={`w-full h-full object-cover transition-transform duration-500 ${project.slug === "guest-management" ? "scale-105 group-hover:scale-110" : "group-hover:scale-105"}`}
+                    style={project.slug === "eventeny-event-page" ? { objectPosition: "center calc(50% + 16px)" } : undefined}
                   />
 
                   {/* Hover: circular buttons */}
