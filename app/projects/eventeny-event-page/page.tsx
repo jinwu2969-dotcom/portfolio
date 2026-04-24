@@ -87,7 +87,7 @@ export default function SmartDataMigrationPage() {
         If you have any questions, please contact{" "}
         <a
           href={`mailto:${EMAIL}`}
-          style={{ color: "var(--text-primary)", textDecoration: "underline", textUnderlineOffset: "3px" }}
+          style={{ color: "var(--text-primary)", textDecoration: "none" }}
         >
           {EMAIL}
         </a>
