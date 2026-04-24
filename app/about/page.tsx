@@ -138,12 +138,12 @@ export default function AboutPage() {
           </p>
         </ScrollReveal>
         <ScrollReveal>
-          <div className="rounded-2xl" style={{ backgroundColor: "#111111", padding: "40px 48px" }}>
+          <div className="rounded-2xl" style={{ backgroundColor: "var(--bg-surface)", padding: "40px 48px" }}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {skills.map((skill) => (
                 <div key={skill.title}>
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: "#222222" }}>
-                    <skill.icon size={18} strokeWidth={1.5} color="#ffffff" />
+                  <div className="w-9 h-9 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: "var(--bg-surface-2)" }}>
+                    <skill.icon size={18} strokeWidth={1.5} color="var(--text-primary)" />
                   </div>
                   <h3 className="text-[var(--text-primary)] mb-3" style={{ fontSize: "16px", fontWeight: 450 }}>{skill.title}</h3>
                   <p style={{ fontSize: "15px", color: "var(--text-secondary)", lineHeight: "1.6" }}>{skill.description}</p>
