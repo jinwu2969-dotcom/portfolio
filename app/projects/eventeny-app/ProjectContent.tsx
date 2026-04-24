@@ -413,7 +413,7 @@ export default function ProjectContent() {
                 label: "Connect with event communities",
               },
             ].map((s) => (
-              <div key={s.label} className="rounded-xl p-6 flex flex-col items-center gap-6" style={{ border: "1px solid rgb(46, 46, 46)" }}>
+              <div key={s.label} className="rounded-xl p-6 flex flex-col items-center gap-6" style={{ border: "1px solid var(--border)" }}>
                 <div
                   className="flex items-center justify-center"
                   style={{ width: "64px", height: "64px", backgroundColor: s.iconBg, borderRadius: "50%" }}
