@@ -1,38 +1,25 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useSpring } from "framer-motion";
 
 export default function CustomCursor() {
   const [pressed, setPressed] = useState(false);
   const [visible, setVisible] = useState(false);
 
-  const rawX = useRef(0);
-  const rawY = useRef(0);
-
-  const springConfig = { stiffness: 180, damping: 22, mass: 0.6 };
-  const x = useSpring(0, springConfig);
-  const y = useSpring(0, springConfig);
+  const x = useSpring(0, { stiffness: 9000, damping: 100, mass: 0.1 });
+  const y = useSpring(0, { stiffness: 9000, damping: 100, mass: 0.1 });
 
   useEffect(() => {
-    let raf: number;
-
     const onMove = (e: MouseEvent) => {
-      rawX.current = e.clientX;
-      rawY.current = e.clientY;
+      x.set(e.clientX);
+      y.set(e.clientY);
       if (!visible) setVisible(true);
     };
     const onDown = () => setPressed(true);
     const onUp = () => setPressed(false);
     const onLeave = () => setVisible(false);
     const onEnter = () => setVisible(true);
-
-    const loop = () => {
-      x.set(rawX.current);
-      y.set(rawY.current);
-      raf = requestAnimationFrame(loop);
-    };
-    raf = requestAnimationFrame(loop);
 
     window.addEventListener("mousemove", onMove);
     window.addEventListener("mousedown", onDown);
@@ -41,7 +28,6 @@ export default function CustomCursor() {
     document.documentElement.addEventListener("mouseenter", onEnter);
 
     return () => {
-      cancelAnimationFrame(raf);
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("mousedown", onDown);
       window.removeEventListener("mouseup", onUp);
