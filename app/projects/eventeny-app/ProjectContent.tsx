@@ -864,12 +864,14 @@ export default function ProjectContent() {
       <div className="px-6 md:px-16 max-w-[64rem] mx-auto" style={{ marginTop: "60px" }}>
         <div className="grid grid-cols-2 gap-x-10 md:gap-x-16 mb-6">
           <p className="text-[24px] text-[var(--text-primary)] leading-[1.25]" style={{ fontWeight: 400, letterSpacing: "-0.3px" }}>
-            Find and connect with your community safely
+            Final Design: Safe Community Meetups, Added to Your Schedule
           </p>
           <p className="text-[16px] text-[var(--text-label)] leading-relaxed font-normal">
-            The experience doesn't have to end when the event does. Eventeny lets{" "}
+            The experience doesn&apos;t have to end when the event does. Eventeny lets{" "}
             <strong className="text-[var(--text-primary)] font-normal">verified ticket holders</strong>{" "}
-            connect with fellow attendees, share moments, and comment on experiences — with community guidelines and safety tools to keep interactions trustworthy.
+            discover like-minded attendees through shared social profiles and send{" "}
+            <strong className="text-[var(--text-primary)] font-normal">on-site meetup invites</strong>{" "}
+            directly in the app — with accepted meetups automatically added to their event schedule.
           </p>
         </div>
 
