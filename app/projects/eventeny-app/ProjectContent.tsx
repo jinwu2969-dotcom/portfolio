@@ -609,6 +609,7 @@ export default function ProjectContent() {
       </ScrollReveal>
 
       {/* ── Customize your schedule ──────────────────────────── */}
+      <div style={{ display: "none" }}>
       <ScrollReveal>
       <div className="px-6 md:px-16 max-w-[64rem] mx-auto" style={{ marginTop: "80px" }}>
         <div className="grid grid-cols-2 gap-x-10 md:gap-x-16 mb-6">
@@ -650,6 +651,7 @@ export default function ProjectContent() {
         </div>
       </div>
       </ScrollReveal>
+      </div>{/* end hidden: Customize your schedule */}
 
       <div style={{ height: "200px" }} />
 
@@ -823,7 +825,8 @@ export default function ProjectContent() {
       <ScrollReveal>
       <div className="px-6 md:px-16 max-w-[64rem] mx-auto" style={{ marginTop: "60px" }}>
         <div className="rounded-2xl" style={{ backgroundColor: "var(--bg-surface)", padding: "40px 48px" }}>
-          <p className="text-[16px] uppercase tracking-widest text-[var(--text-label)]" style={{ fontWeight: 400, marginBottom: "32px" }}>DESIGN VALIDATION</p>
+          <p className="text-[16px] uppercase tracking-widest text-[var(--text-label)]" style={{ fontWeight: 400, marginBottom: "12px" }}>DESIGN VALIDATION</p>
+          <p className="text-[15px] text-[var(--text-label)] leading-relaxed" style={{ fontWeight: 400, marginBottom: "32px" }}>I tested the prototypes with internal stakeholders and remote participants. Two themes emerged: users felt uneasy about meeting strangers at events, and consistently wanted confirmed meetups added directly to their calendar.</p>
           <div className="grid grid-cols-4 gap-4">
             <div className="rounded-xl overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
               <img src="/eventeny-dv-1.jpg" alt="Design validation 1" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -837,6 +840,20 @@ export default function ProjectContent() {
             <div className="rounded-xl overflow-hidden" style={{ aspectRatio: "1 / 1" }}>
               <img src="/eventeny-dv-4.jpg" alt="Design validation 4" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
+          </div>
+          <div className="grid grid-cols-2 gap-6" style={{ marginTop: "24px" }}>
+            <blockquote className="border-l-2 pl-5" style={{ borderColor: "#08A6A0" }}>
+              <p className="text-sm text-[var(--text-label)] italic leading-relaxed">&ldquo;Approaching a stranger at an event is nerve-wracking. Verified profiles would make me feel safer.&rdquo;</p>
+            </blockquote>
+            <blockquote className="border-l-2 pl-5" style={{ borderColor: "#08A6A0" }}>
+              <p className="text-sm text-[var(--text-label)] italic leading-relaxed">&ldquo;Someone made me uncomfortable and I couldn&apos;t report it. A safety layer would change how I use the app.&rdquo;</p>
+            </blockquote>
+            <blockquote className="border-l-2 pl-5" style={{ borderColor: "#08A6A0" }}>
+              <p className="text-sm text-[var(--text-label)] italic leading-relaxed">&ldquo;I thought we had plans but they never showed. Both sides should confirm before it&apos;s locked in.&rdquo;</p>
+            </blockquote>
+            <blockquote className="border-l-2 pl-5" style={{ borderColor: "#08A6A0" }}>
+              <p className="text-sm text-[var(--text-label)] italic leading-relaxed">&ldquo;Once we agree to meet, it should auto-add to my calendar. That&apos;s where plans fall apart.&rdquo;</p>
+            </blockquote>
           </div>
         </div>
       </div>
@@ -857,17 +874,27 @@ export default function ProjectContent() {
         </div>
 
         <div className="grid grid-cols-2 gap-6">
-          <div className="rounded-2xl flex flex-col p-6" style={{ backgroundColor: "#DCE8F5", minHeight: "480px" }}>
-            <div className="flex-1 flex items-center justify-center">
-              <p className="text-sm" style={{ color: "#a0b8d4" }}>Phone mockup placeholder</p>
-            </div>
+          <div className="rounded-2xl flex flex-col items-center" style={{ backgroundColor: "#DCE8F5", padding: "0px 0px 24px" }}>
+            <img
+              src="https://framerusercontent.com/images/zAWsOjRUWO2RnQy8RbSjemJTk.png"
+              alt="Attendee list gated by ticket"
+              style={{ width: "82%", height: "auto", objectFit: "contain" }}
+            />
             <p className="text-[14px] mt-4 text-center" style={{ fontWeight: 450, color: "#333" }}>Interact with the community safely</p>
+            <img
+              src="https://framerusercontent.com/images/ktAqilmMCyRklKXIyMB1D93ZQU.png"
+              alt="90+ others are going"
+              style={{ width: "90%", height: "auto", marginTop: "32px" }}
+            />
           </div>
 
-          <div className="rounded-2xl flex flex-col p-6" style={{ backgroundColor: "#DCE8F5", minHeight: "480px" }}>
-            <p className="text-[14px] mb-4 text-center" style={{ fontWeight: 450, color: "#333" }}>Share with YOUR community</p>
-            <div className="flex-1 flex items-center justify-center">
-              <p className="text-sm" style={{ color: "#a0b8d4" }}>Phone mockup placeholder</p>
+          <div className="rounded-2xl" style={{ backgroundColor: "#DCE8F5", minHeight: "480px", padding: "24px 0", display: "flex", flexDirection: "column" }}>
+            <div style={{ flex: 1, position: "relative", borderRadius: "12px", overflow: "hidden" }}>
+              <iframe
+                src="https://player.vimeo.com/video/1187517200?background=1&autoplay=1&loop=1&muted=1"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+                allow="autoplay; fullscreen"
+              />
             </div>
           </div>
         </div>
