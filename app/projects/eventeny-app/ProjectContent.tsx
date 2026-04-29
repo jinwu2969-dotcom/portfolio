@@ -891,9 +891,9 @@ export default function ProjectContent() {
           <div className="rounded-2xl" style={{ backgroundColor: "#DCE8F5", minHeight: "480px", padding: "24px 0", display: "flex", flexDirection: "column" }}>
             <div style={{ flex: 1, position: "relative", borderRadius: "12px", overflow: "hidden" }}>
               <iframe
-                src="https://player.vimeo.com/video/1187517200?background=1&autoplay=1&loop=1&muted=1"
+                src="https://player.vimeo.com/video/1187517200?muted=1&autoplay=1&autopause=0&controls=0&loop=1&app_id=122963"
                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
-                allow="autoplay; fullscreen"
+                allow="autoplay; fullscreen; picture-in-picture"
               />
             </div>
           </div>
