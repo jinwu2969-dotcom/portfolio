@@ -896,6 +896,7 @@ export default function ProjectContent() {
                 allow="autoplay; fullscreen; picture-in-picture"
               />
             </div>
+            <p className="text-[14px] mt-4 text-center" style={{ fontWeight: 450, color: "#333" }}>Invite meetup and add to schedule</p>
           </div>
         </div>
       </div>
