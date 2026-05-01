@@ -380,7 +380,7 @@ export default function OrbitingAnimation() {
       {/* Left — hero + orbiting shapes */}
       <div className="inline-grid grid-cols-[max-content] grid-rows-[max-content] leading-[0] place-items-start relative shrink-0 pb-[16px] px-[2px]">
         <p
-          className="[grid-area:1_/_1] font-sans font-normal leading-[1.2] ml-[173px] mt-[153px] relative text-[40px] text-[var(--text-primary)] tracking-[-0.4px] w-[477px] z-10"
+          className="[grid-area:1_/_1] font-sans font-normal leading-[1.2] ml-[173px] mt-[169px] relative text-[40px] text-[var(--text-primary)] tracking-[-0.4px] w-[477px] z-10"
           style={{ height: "285px" }}
         >
           Jinyu designs enterprise tools that drive efficiency and product growth, currently crafting experiences{" "}
