@@ -383,7 +383,7 @@ export default function OrbitingAnimation() {
           className="[grid-area:1_/_1] font-sans font-normal leading-[1.2] ml-[173px] mt-[153px] relative text-[40px] text-[var(--text-primary)] tracking-[-0.4px] w-[477px] z-10"
           style={{ height: "285px" }}
         >
-          Jinyu designs enterprise tools that drive efficiency and product growth{" "}
+          Jinyu designs enterprise tools that drive efficiency and product growth, currently crafting experiences{" "}
           <span className="text-[#08a6a0]">@Eventeny</span>.
         </p>
         <OrbitingShapes
