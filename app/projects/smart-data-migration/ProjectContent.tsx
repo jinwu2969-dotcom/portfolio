@@ -803,6 +803,30 @@ export default function ProjectContent() {
 
       <div style={{ height: "200px" }} />
 
+      {/* Final Design */}
+      <section className="px-6 md:px-16 max-w-[72rem] mx-auto">
+        <ScrollReveal>
+          <div>
+            <TwoCol label="Final design">
+              <h3
+                className="text-[32px] leading-[1.15] text-[var(--text-primary)] mb-5"
+                style={{ fontWeight: 400, letterSpacing: "-0.3px" }}
+              >
+                [ Final design headline ]
+              </h3>
+              <p className="text-[16px] text-[var(--text-label)] leading-relaxed font-normal">
+                [ Paragraph describing the final design outcome. ]
+              </p>
+            </TwoCol>
+            <div className="mt-8 rounded-2xl bg-[var(--bg-surface)] p-8">
+              <Placeholder label="[ Final design ]" height={400} />
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
+
+      <div style={{ height: "200px" }} />
+
       {/* ── 05 REFLECTION ────────────────────────────────────── */}
       <div id="reflection" />
       <div className="px-6 md:px-16 max-w-[72rem] mx-auto">
