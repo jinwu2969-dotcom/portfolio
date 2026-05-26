@@ -824,7 +824,7 @@ export default function ProjectContent() {
                 Column mapping
               </p>
               <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
-                <img src="/final-design-column-mapping.png" alt="Column mapping" className="w-full h-auto block rounded-t-lg" />
+                <img src="/final-design-column-mapping.png" alt="Column mapping" className="w-full h-auto block" style={{ borderRadius: "4px 4px 0 0" }} />
               </div>
             </div>
 
@@ -834,7 +834,7 @@ export default function ProjectContent() {
                 Review and map tags &amp; questions
               </p>
               <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
-                <img src="/final-design-review-map.png" alt="Review and map tags and questions" className="w-full h-auto block rounded-t-lg" />
+                <img src="/final-design-review-map.png" alt="Review and map tags and questions" className="w-full h-auto block" style={{ borderRadius: "4px 4px 0 0" }} />
               </div>
             </div>
 
@@ -844,7 +844,7 @@ export default function ProjectContent() {
                 Validate data
               </p>
               <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
-                <img src="/final-design-validate.png" alt="Validate data" className="w-full h-auto block rounded-t-lg" />
+                <img src="/final-design-validate.png" alt="Validate data" className="w-full h-auto block" style={{ borderRadius: "4px 4px 0 0" }} />
               </div>
             </div>
           </div>
