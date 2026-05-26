@@ -819,32 +819,32 @@ export default function ProjectContent() {
               </p>
             </TwoCol>
             {/* Container 1 — Column mapping */}
-            <div className="mt-8 rounded-2xl overflow-hidden" style={{ backgroundColor: "#038580" }}>
+            <div className="mt-8 rounded-2xl" style={{ backgroundColor: "#038580" }}>
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Column mapping
               </p>
-              <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
-                <img src="/final-design-column-mapping.png" alt="Column mapping" className="w-full h-auto block" style={{ borderRadius: "4px 4px 0 0" }} />
+              <div style={{ margin: "0 24px", borderRadius: "4px 4px 0 0", overflow: "hidden", lineHeight: 0 }}>
+                <img src="/final-design-column-mapping.png" alt="Column mapping" className="w-full h-auto block" />
               </div>
             </div>
 
             {/* Container 2 — Review and map tags & questions */}
-            <div className="mt-6 rounded-2xl overflow-hidden" style={{ backgroundColor: "#038580" }}>
+            <div className="rounded-2xl" style={{ backgroundColor: "#038580", marginTop: "60px" }}>
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Review and map tags &amp; questions
               </p>
-              <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
-                <img src="/final-design-review-map.png" alt="Review and map tags and questions" className="w-full h-auto block" style={{ borderRadius: "4px 4px 0 0" }} />
+              <div style={{ margin: "0 24px", borderRadius: "4px 4px 0 0", overflow: "hidden", lineHeight: 0 }}>
+                <img src="/final-design-review-map.png" alt="Review and map tags and questions" className="w-full h-auto block" />
               </div>
             </div>
 
             {/* Container 3 — Validate data */}
-            <div className="mt-6 rounded-2xl overflow-hidden" style={{ backgroundColor: "#038580" }}>
+            <div className="rounded-2xl" style={{ backgroundColor: "#038580", marginTop: "60px" }}>
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Validate data
               </p>
-              <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
-                <img src="/final-design-validate.png" alt="Validate data" className="w-full h-auto block" style={{ borderRadius: "4px 4px 0 0" }} />
+              <div style={{ margin: "0 24px", borderRadius: "4px 4px 0 0", overflow: "hidden", lineHeight: 0 }}>
+                <img src="/final-design-validate.png" alt="Validate data" className="w-full h-auto block" />
               </div>
             </div>
           </div>
