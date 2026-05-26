@@ -302,6 +302,8 @@ export default function ProjectContent() {
         </section>
       </ScrollReveal>
 
+      <div style={{ height: "200px" }} />
+
       {/* Vision — full-width accent section */}
       <ScrollReveal>
         <div className="w-full py-28 px-6 md:px-16" style={{ backgroundColor: "rgba(3, 133, 128, 0.6)" }}>
