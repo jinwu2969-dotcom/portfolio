@@ -818,11 +818,28 @@ export default function ProjectContent() {
                 [ Paragraph describing the final design outcome. ]
               </p>
             </TwoCol>
-            <div className="mt-8 rounded-2xl p-8" style={{ backgroundColor: "#038580" }}>
-              <p className="text-[14px] uppercase tracking-widest mb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
+            {/* Container 1 — Column mapping */}
+            <div className="mt-8 rounded-2xl overflow-hidden" style={{ backgroundColor: "#038580" }}>
+              <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Column mapping
               </p>
-              <Placeholder label="[ Final design ]" height={400} />
+              <img src="/final-design-column-mapping.png" alt="Column mapping" className="w-full h-auto block" />
+            </div>
+
+            {/* Container 2 — Review and map tags & questions */}
+            <div className="mt-6 rounded-2xl overflow-hidden" style={{ backgroundColor: "#038580" }}>
+              <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
+                Review and map tags &amp; questions
+              </p>
+              <img src="/final-design-review-map.png" alt="Review and map tags and questions" className="w-full h-auto block" />
+            </div>
+
+            {/* Container 3 — Validate data */}
+            <div className="mt-6 rounded-2xl overflow-hidden" style={{ backgroundColor: "#038580" }}>
+              <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
+                Validate data
+              </p>
+              <img src="/final-design-validate.png" alt="Validate data" className="w-full h-auto block" />
             </div>
           </div>
         </ScrollReveal>
