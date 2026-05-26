@@ -302,6 +302,25 @@ export default function ProjectContent() {
         </section>
       </ScrollReveal>
 
+      {/* Vision — full-width accent section */}
+      <ScrollReveal>
+        <div className="w-full py-28 px-6 md:px-16" style={{ backgroundColor: "rgba(3, 133, 128, 0.6)" }}>
+          <div className="max-w-[72rem] mx-auto">
+            <TwoCol label="Vision" labelColor="#ffffff">
+              <h2
+                className="text-[32px] leading-[1.15]"
+                style={{ fontWeight: 400, letterSpacing: "-0.3px", color: "#ffffff" }}
+              >
+                [ Insight headline — the key design direction that emerged from research ]
+              </h2>
+              <p className="text-[16px] leading-relaxed" style={{ color: "#ffffff" }}>
+                [ Paragraph — connect research findings to the design themes you pursued. ]
+              </p>
+            </TwoCol>
+          </div>
+        </div>
+      </ScrollReveal>
+
       <div style={{ height: "200px" }} />
 
       {/* ── 03 RESEARCH ──────────────────────────────────────── */}
@@ -848,27 +867,6 @@ export default function ProjectContent() {
           </div>
         </ScrollReveal>
       </section>
-
-      <div style={{ height: "200px" }} />
-
-      {/* Discovery — full-width accent section */}
-      <ScrollReveal>
-        <div className="w-full py-28 px-6 md:px-16" style={{ backgroundColor: "#CE5A25" }}>
-          <div className="max-w-[72rem] mx-auto">
-            <TwoCol label="Discovery" labelColor="#ffffff">
-              <h2
-                className="text-[32px] leading-[1.15]"
-                style={{ fontWeight: 400, letterSpacing: "-0.3px", color: "#ffffff" }}
-              >
-                [ Insight headline — the key design direction that emerged from research ]
-              </h2>
-              <p className="text-[16px] leading-relaxed" style={{ color: "#ffffff" }}>
-                [ Paragraph — connect research findings to the design themes you pursued. ]
-              </p>
-            </TwoCol>
-          </div>
-        </div>
-      </ScrollReveal>
 
       <div style={{ height: "200px" }} />
 
