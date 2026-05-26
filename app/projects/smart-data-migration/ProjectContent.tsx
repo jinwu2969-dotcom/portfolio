@@ -730,16 +730,23 @@ export default function ProjectContent() {
               </p>
             </TwoCol>
             <div
-              className="mt-8 rounded-2xl bg-[var(--bg-surface)] p-4"
-              style={{ height: "500px", overflowX: "auto", overflowY: "hidden" }}
+              className="mt-8 rounded-2xl bg-[var(--bg-surface)]"
+              style={{
+                height: "500px",
+                overflowX: "auto",
+                overflowY: "hidden",
+                padding: "24px",
+                scrollbarWidth: "thin",
+                scrollbarColor: "rgba(144,144,144,0.4) transparent",
+              }}
             >
               <div
-                className="flex items-start gap-0 h-full"
-                style={{ minWidth: "max-content" }}
+                className="flex items-start h-full"
+                style={{ minWidth: "max-content", gap: "4px" }}
               >
                 {/* V1 */}
                 <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
-                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2" style={{ fontWeight: 500 }}>Handling data v1</p>
+                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2 text-center" style={{ fontWeight: 500 }}>Handling data v1</p>
                   <div className="flex-1 min-h-0">
                     <img
                       src="/migration-flow-v1.png"
@@ -750,7 +757,7 @@ export default function ProjectContent() {
                 </div>
 
                 {/* Arrow */}
-                <div className="flex items-center justify-center flex-shrink-0 self-center px-3">
+                <div className="flex items-center justify-center flex-shrink-0 self-center" style={{ width: "64px" }}>
                   <svg width="56" height="16" viewBox="0 0 56 16" fill="none">
                     <circle cx="5" cy="8" r="4" fill="#909090" />
                     <line x1="9" y1="8" x2="46" y2="8" stroke="#909090" strokeWidth="1.5" />
@@ -760,7 +767,7 @@ export default function ProjectContent() {
 
                 {/* V2 */}
                 <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
-                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2" style={{ fontWeight: 500 }}>Handling data v2</p>
+                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2 text-center" style={{ fontWeight: 500 }}>Handling data v2</p>
                   <div className="flex-1 min-h-0">
                     <img
                       src="/migration-flow-v2.png"
@@ -771,7 +778,7 @@ export default function ProjectContent() {
                 </div>
 
                 {/* Arrow */}
-                <div className="flex items-center justify-center flex-shrink-0 self-center px-3">
+                <div className="flex items-center justify-center flex-shrink-0 self-center" style={{ width: "64px" }}>
                   <svg width="56" height="16" viewBox="0 0 56 16" fill="none">
                     <circle cx="5" cy="8" r="4" fill="#909090" />
                     <line x1="9" y1="8" x2="46" y2="8" stroke="#909090" strokeWidth="1.5" />
@@ -781,7 +788,7 @@ export default function ProjectContent() {
 
                 {/* V3 */}
                 <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
-                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2" style={{ fontWeight: 500 }}>Handling data v3</p>
+                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2 text-center" style={{ fontWeight: 500 }}>Handling data v3</p>
                   <div className="flex-1 min-h-0">
                     <img
                       src="/migration-flow-v3.png"
