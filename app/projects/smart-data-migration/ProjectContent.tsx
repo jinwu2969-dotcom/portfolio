@@ -116,27 +116,6 @@ export default function ProjectContent() {
         </section>
       </ScrollReveal>
 
-      {/* ── 3 intro mockup images ────────────────────────────── */}
-      <ScrollReveal>
-        <div
-          className="grid grid-cols-3 px-6 md:px-8"
-          style={{ gap: "24px", marginTop: "120px", marginBottom: "200px" }}
-        >
-          {[
-            "Mockup 1 — [ add image ]",
-            "Mockup 2 — [ add image ]",
-            "Mockup 3 — [ add image ]",
-          ].map((label) => (
-            <div
-              key={label}
-              className="rounded-2xl bg-[var(--bg-surface)] pt-8 px-8 md:pt-6 md:px-6 flex items-end justify-center"
-              style={{ minHeight: "360px" }}
-            >
-              <Placeholder label={label} height={280} />
-            </div>
-          ))}
-        </div>
-      </ScrollReveal>
 
       {/* ── 01 CONTEXT ───────────────────────────────────────── */}
       <div id="context" />
@@ -823,8 +802,8 @@ export default function ProjectContent() {
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Column mapping
               </p>
-              <div style={{ margin: "0 24px", borderRadius: "4px 4px 0 0", overflow: "hidden", lineHeight: 0 }}>
-                <img src="/final-design-column-mapping.png" alt="Column mapping" className="w-full h-auto block" />
+              <div style={{ margin: "0 24px", borderRadius: "8px 8px 0 0", overflow: "hidden", lineHeight: 0 }}>
+                <img src="/final-design-column-mapping.png" alt="Column mapping" style={{ width: "100%", display: "block", aspectRatio: "2944/2200", objectFit: "cover", objectPosition: "top" }} />
               </div>
             </div>
 
@@ -833,8 +812,8 @@ export default function ProjectContent() {
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Review and map tags &amp; questions
               </p>
-              <div style={{ margin: "0 24px", borderRadius: "4px 4px 0 0", overflow: "hidden", lineHeight: 0 }}>
-                <img src="/final-design-review-map.png" alt="Review and map tags and questions" className="w-full h-auto block" />
+              <div style={{ margin: "0 24px", borderRadius: "8px 8px 0 0", overflow: "hidden", lineHeight: 0 }}>
+                <img src="/final-design-review-map.png" alt="Review and map tags and questions" style={{ width: "100%", display: "block", aspectRatio: "2944/2200", objectFit: "cover", objectPosition: "top" }} />
               </div>
             </div>
 
@@ -843,8 +822,8 @@ export default function ProjectContent() {
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Validate data
               </p>
-              <div style={{ margin: "0 24px", borderRadius: "4px 4px 0 0", overflow: "hidden", lineHeight: 0 }}>
-                <img src="/final-design-validate.png" alt="Validate data" className="w-full h-auto block" />
+              <div style={{ margin: "0 24px", borderRadius: "8px 8px 0 0", overflow: "hidden", lineHeight: 0 }}>
+                <img src="/final-design-validate.png" alt="Validate data" style={{ width: "100%", display: "block", aspectRatio: "2944/2200", objectFit: "cover", objectPosition: "top" }} />
               </div>
             </div>
           </div>
@@ -853,57 +832,6 @@ export default function ProjectContent() {
 
       <div style={{ height: "200px" }} />
 
-      {/* ── 05 REFLECTION ────────────────────────────────────── */}
-      <div id="reflection" />
-      <div className="px-6 md:px-16 max-w-[72rem] mx-auto">
-        <hr className="border-[var(--border)] mb-10" />
-      </div>
-      <section className="px-6 md:px-16 max-w-[72rem] mx-auto">
-
-        <ScrollReveal>
-          <TwoCol label="Impacts">
-            <h2
-              className="text-[32px] leading-[1.2] text-[var(--text-primary)] mb-8"
-              style={{ fontWeight: 400, letterSpacing: "-0.3px" }}
-            >
-              [ Heading — impact and outcomes of this project ]
-            </h2>
-          </TwoCol>
-          <div className="mt-10">
-            <div className="grid grid-cols-3 gap-6">
-              {[
-                { n: "—", l: "Impact metric 1", d: "[ What this metric represents ]" },
-                { n: "—", l: "Impact metric 2", d: "[ What this metric represents ]" },
-                { n: "—", l: "Impact metric 3", d: "[ What this metric represents ]" },
-              ].map((m) => (
-                <div key={m.l}>
-                  <p className="text-5xl md:text-6xl font-semibold text-orange leading-none mb-1">{m.n}</p>
-                  <p className="text-sm font-medium text-[var(--text-primary)] mb-1">{m.l}</p>
-                  <p className="text-[16px] text-[var(--text-label)] leading-relaxed font-normal">{m.d}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </ScrollReveal>
-
-        <div style={{ height: "80px" }} />
-
-        <ScrollReveal>
-          <TwoCol label="Takeaways">
-            <h3
-              className="text-[32px] text-[var(--text-primary)] mb-4"
-              style={{ fontWeight: 400, letterSpacing: "-0.3px" }}
-            >
-              [ Takeaway headline ]
-            </h3>
-            <p className="text-[16px] text-[var(--text-label)] leading-relaxed font-normal max-w-xl mb-8">
-              [ Reflect on what you learned — about the problem space, the process, stakeholder dynamics,
-              or your own growth as a designer. ]
-            </p>
-          </TwoCol>
-        </ScrollReveal>
-
-      </section>
 
     </div>
   );
