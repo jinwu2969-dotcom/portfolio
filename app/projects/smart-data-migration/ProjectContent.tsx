@@ -782,7 +782,7 @@ export default function ProjectContent() {
             {/* Reflection blockquote */}
             <blockquote className="mt-6 border-l-2 pl-5" style={{ borderColor: "var(--border)" }}>
               <p className="text-[14px] text-[var(--text-label)] leading-relaxed" style={{ fontWeight: 400 }}>
-                [ Step 3 reflection ]
+                AI surfaced a viable solution to the ambiguity challenges, but not necessarily the strongest UX. I continued with more targeted prompts and manual adjustments to refine the experience.
               </p>
             </blockquote>
           </div>
