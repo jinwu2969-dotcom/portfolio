@@ -818,7 +818,10 @@ export default function ProjectContent() {
                 [ Paragraph describing the final design outcome. ]
               </p>
             </TwoCol>
-            <div className="mt-8 rounded-2xl bg-[var(--bg-surface)] p-8">
+            <div className="mt-8 rounded-2xl p-8" style={{ backgroundColor: "#038580" }}>
+              <p className="text-[14px] uppercase tracking-widest mb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
+                Column mapping
+              </p>
               <Placeholder label="[ Final design ]" height={400} />
             </div>
           </div>
