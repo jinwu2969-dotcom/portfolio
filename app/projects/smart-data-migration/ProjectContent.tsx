@@ -567,7 +567,7 @@ export default function ProjectContent() {
               className="mt-6 border-l-2 pl-5"
               style={{ borderColor: "var(--border)" }}
             >
-              <p className="text-[15px] text-[var(--text-label)] leading-relaxed" style={{ fontWeight: 400 }}>
+              <p className="text-[14px] text-[var(--text-label)] leading-relaxed" style={{ fontWeight: 400 }}>
                 This prototype helped me quickly validate the migration flow, but it lacked design system fidelity and didn&rsquo;t handle edge cases. To get more consistent results, I worked with Claude to refine the prompt — covering design guidelines, technical constraints, and edge case handling.
               </p>
             </blockquote>
