@@ -729,8 +729,59 @@ export default function ProjectContent() {
                 [ Paragraph — summarize competitive landscape and Eventeny's opportunity. ]
               </p>
             </TwoCol>
-            <div className="mt-8 rounded-2xl overflow-hidden">
-              <Placeholder label="[ Competitive analysis chart / table ]" height={280} />
+            <div
+              className="mt-8 rounded-2xl bg-[var(--bg-surface)] p-6"
+              style={{ height: "500px", overflowX: "auto", overflowY: "hidden" }}
+            >
+              <div
+                className="flex items-center gap-0 h-full"
+                style={{ minWidth: "max-content" }}
+              >
+                {/* V1 */}
+                <div className="h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <img
+                    src="/migration-flow-v1.png"
+                    alt="Migration flow V1"
+                    className="h-full w-full object-contain object-top rounded-lg"
+                  />
+                </div>
+
+                {/* Arrow */}
+                <div className="flex items-center justify-center flex-shrink-0 px-4">
+                  <svg width="56" height="16" viewBox="0 0 56 16" fill="none">
+                    <circle cx="5" cy="8" r="4" fill="#909090" />
+                    <line x1="9" y1="8" x2="46" y2="8" stroke="#909090" strokeWidth="1.5" />
+                    <path d="M46 4L54 8L46 12Z" fill="#909090" />
+                  </svg>
+                </div>
+
+                {/* V2 */}
+                <div className="h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <img
+                    src="/migration-flow-v2.png"
+                    alt="Migration flow V2"
+                    className="h-full w-full object-contain object-top rounded-lg"
+                  />
+                </div>
+
+                {/* Arrow */}
+                <div className="flex items-center justify-center flex-shrink-0 px-4">
+                  <svg width="56" height="16" viewBox="0 0 56 16" fill="none">
+                    <circle cx="5" cy="8" r="4" fill="#909090" />
+                    <line x1="9" y1="8" x2="46" y2="8" stroke="#909090" strokeWidth="1.5" />
+                    <path d="M46 4L54 8L46 12Z" fill="#909090" />
+                  </svg>
+                </div>
+
+                {/* V3 */}
+                <div className="h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <img
+                    src="/migration-flow-v3.png"
+                    alt="Migration flow V3"
+                    className="h-full w-full object-contain object-top rounded-lg"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </ScrollReveal>
