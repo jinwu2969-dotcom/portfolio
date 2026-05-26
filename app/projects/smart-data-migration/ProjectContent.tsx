@@ -730,24 +730,27 @@ export default function ProjectContent() {
               </p>
             </TwoCol>
             <div
-              className="mt-8 rounded-2xl bg-[var(--bg-surface)] p-6"
+              className="mt-8 rounded-2xl bg-[var(--bg-surface)] p-4"
               style={{ height: "500px", overflowX: "auto", overflowY: "hidden" }}
             >
               <div
-                className="flex items-center gap-0 h-full"
+                className="flex items-start gap-0 h-full"
                 style={{ minWidth: "max-content" }}
               >
                 {/* V1 */}
-                <div className="h-full flex-shrink-0" style={{ width: "420px" }}>
-                  <img
-                    src="/migration-flow-v1.png"
-                    alt="Migration flow V1"
-                    className="h-full w-full object-contain object-top rounded-lg"
-                  />
+                <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2" style={{ fontWeight: 500 }}>Handling data v1</p>
+                  <div className="flex-1 min-h-0">
+                    <img
+                      src="/migration-flow-v1.png"
+                      alt="Handling data V1"
+                      className="h-full w-full object-contain object-top rounded-lg"
+                    />
+                  </div>
                 </div>
 
                 {/* Arrow */}
-                <div className="flex items-center justify-center flex-shrink-0 px-4">
+                <div className="flex items-center justify-center flex-shrink-0 self-center px-3">
                   <svg width="56" height="16" viewBox="0 0 56 16" fill="none">
                     <circle cx="5" cy="8" r="4" fill="#909090" />
                     <line x1="9" y1="8" x2="46" y2="8" stroke="#909090" strokeWidth="1.5" />
@@ -756,16 +759,19 @@ export default function ProjectContent() {
                 </div>
 
                 {/* V2 */}
-                <div className="h-full flex-shrink-0" style={{ width: "420px" }}>
-                  <img
-                    src="/migration-flow-v2.png"
-                    alt="Migration flow V2"
-                    className="h-full w-full object-contain object-top rounded-lg"
-                  />
+                <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2" style={{ fontWeight: 500 }}>Handling data v2</p>
+                  <div className="flex-1 min-h-0">
+                    <img
+                      src="/migration-flow-v2.png"
+                      alt="Handling data V2"
+                      className="h-full w-full object-contain object-top rounded-lg"
+                    />
+                  </div>
                 </div>
 
                 {/* Arrow */}
-                <div className="flex items-center justify-center flex-shrink-0 px-4">
+                <div className="flex items-center justify-center flex-shrink-0 self-center px-3">
                   <svg width="56" height="16" viewBox="0 0 56 16" fill="none">
                     <circle cx="5" cy="8" r="4" fill="#909090" />
                     <line x1="9" y1="8" x2="46" y2="8" stroke="#909090" strokeWidth="1.5" />
@@ -774,12 +780,15 @@ export default function ProjectContent() {
                 </div>
 
                 {/* V3 */}
-                <div className="h-full flex-shrink-0" style={{ width: "420px" }}>
-                  <img
-                    src="/migration-flow-v3.png"
-                    alt="Migration flow V3"
-                    className="h-full w-full object-contain object-top rounded-lg"
-                  />
+                <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <p className="text-[12px] uppercase tracking-widest text-[var(--text-label)] mb-2" style={{ fontWeight: 500 }}>Handling data v3</p>
+                  <div className="flex-1 min-h-0">
+                    <img
+                      src="/migration-flow-v3.png"
+                      alt="Handling data V3"
+                      className="h-full w-full object-contain object-top rounded-lg"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
