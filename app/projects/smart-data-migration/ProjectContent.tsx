@@ -823,7 +823,7 @@ export default function ProjectContent() {
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Column mapping
               </p>
-              <div style={{ padding: "0 24px 0" }}>
+              <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
                 <img src="/final-design-column-mapping.png" alt="Column mapping" className="w-full h-auto block rounded-t-lg" />
               </div>
             </div>
@@ -833,7 +833,7 @@ export default function ProjectContent() {
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Review and map tags &amp; questions
               </p>
-              <div style={{ padding: "0 24px 0" }}>
+              <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
                 <img src="/final-design-review-map.png" alt="Review and map tags and questions" className="w-full h-auto block rounded-t-lg" />
               </div>
             </div>
@@ -843,7 +843,7 @@ export default function ProjectContent() {
               <p className="text-[14px] uppercase tracking-widest px-8 pt-8 pb-6" style={{ fontWeight: 400, color: "#ffffff" }}>
                 Validate data
               </p>
-              <div style={{ padding: "0 24px 0" }}>
+              <div style={{ padding: "0 24px 0", lineHeight: 0 }}>
                 <img src="/final-design-validate.png" alt="Validate data" className="w-full h-auto block rounded-t-lg" />
               </div>
             </div>
