@@ -218,7 +218,7 @@ export default function ProjectContent() {
                 className="text-[32px] leading-[1.15]"
                 style={{ fontWeight: 400, letterSpacing: "-0.3px", color: "#ffffff" }}
               >
-                [ Insight headline — the key design direction that emerged from research ]
+                Creating a seamless MVP data migration experience for Premium plan users with their tickets and vendor information.
               </h2>
               <p className="text-[16px] leading-relaxed" style={{ color: "#ffffff" }}>
                 [ Paragraph — connect research findings to the design themes you pursued. ]
