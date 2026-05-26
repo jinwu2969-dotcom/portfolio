@@ -813,12 +813,12 @@ export default function ProjectContent() {
         <div style={{ height: "200px" }} />
         <ScrollReveal>
           <div>
-            <TwoCol label="Competitive Analysis">
+            <TwoCol label="Crafting design">
               <h3
                 className="text-[32px] leading-[1.15] text-[var(--text-primary)] mb-5"
                 style={{ fontWeight: 400, letterSpacing: "-0.3px" }}
               >
-                [ Heading — what competitors do and how this approach differentiates ]
+                Fine-tuning the design
               </h3>
               <p className="text-[16px] text-[var(--text-label)] leading-relaxed font-normal">
                 [ Paragraph — summarize competitive landscape and Eventeny's opportunity. ]
