@@ -746,6 +746,7 @@ export default function ProjectContent() {
               >
                 {/* V1 */}
                 <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <p className="text-[14px] text-center mb-2" style={{ fontWeight: 500, color: "#ffffff" }}>Handling data v1</p>
                   <div className="flex-1 min-h-0">
                     <img
                       src="/migration-flow-v1.png"
@@ -753,7 +754,6 @@ export default function ProjectContent() {
                       className="h-full w-full object-contain object-top rounded-lg"
                     />
                   </div>
-                  <p className="text-[14px] text-center mt-2" style={{ fontWeight: 500, color: "#ffffff" }}>Handling data v1</p>
                 </div>
 
                 {/* Arrow */}
@@ -767,6 +767,7 @@ export default function ProjectContent() {
 
                 {/* V2 */}
                 <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <p className="text-[14px] text-center mb-2" style={{ fontWeight: 500, color: "#ffffff" }}>Handling data v2</p>
                   <div className="flex-1 min-h-0">
                     <img
                       src="/migration-flow-v2.png"
@@ -774,7 +775,6 @@ export default function ProjectContent() {
                       className="h-full w-full object-contain object-top rounded-lg"
                     />
                   </div>
-                  <p className="text-[14px] text-center mt-2" style={{ fontWeight: 500, color: "#ffffff" }}>Handling data v2</p>
                 </div>
 
                 {/* Arrow */}
@@ -788,6 +788,7 @@ export default function ProjectContent() {
 
                 {/* V3 */}
                 <div className="flex flex-col h-full flex-shrink-0" style={{ width: "420px" }}>
+                  <p className="text-[14px] text-center mb-2" style={{ fontWeight: 500, color: "#ffffff" }}>Handling data v3</p>
                   <div className="flex-1 min-h-0">
                     <img
                       src="/migration-flow-v3.png"
@@ -795,7 +796,6 @@ export default function ProjectContent() {
                       className="h-full w-full object-contain object-top rounded-lg"
                     />
                   </div>
-                  <p className="text-[14px] text-center mt-2" style={{ fontWeight: 500, color: "#ffffff" }}>Handling data v3</p>
                 </div>
               </div>
             </div>
