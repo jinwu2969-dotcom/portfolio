@@ -726,7 +726,7 @@ export default function ProjectContent() {
                 Fine-tuning the design
               </h3>
               <p className="text-[16px] text-[var(--text-label)] leading-relaxed font-normal">
-                [ Paragraph — summarize competitive landscape and Eventeny's opportunity. ]
+                I examined the AI-generated outputs and steered design directions based on consistency and user experience. I then refined the designs in Figma to ensure full alignment with our component library.
               </p>
             </TwoCol>
             <div
