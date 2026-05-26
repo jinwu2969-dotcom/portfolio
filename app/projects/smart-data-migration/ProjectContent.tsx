@@ -220,9 +220,6 @@ export default function ProjectContent() {
               >
                 Creating a seamless MVP data migration experience for Premium plan users with their tickets and vendor information.
               </h2>
-              <p className="text-[16px] leading-relaxed" style={{ color: "#ffffff" }}>
-                [ Paragraph — connect research findings to the design themes you pursued. ]
-              </p>
             </TwoCol>
           </div>
         </div>
