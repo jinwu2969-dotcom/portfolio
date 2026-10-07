@@ -98,7 +98,7 @@ function Group({ isHovered }: { isHovered: boolean }) {
   );
 }
 
-function Group1({ isHovered, isClicked }: { isHovered: boolean; isClicked: boolean }) {
+function Group1({ isHovered }: { isHovered: boolean }) {
   const circleFill = isHovered ? "#ffffff" : "#BBAD5E";
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative cursor-pointer">
@@ -135,7 +135,7 @@ function Group1({ isHovered, isClicked }: { isHovered: boolean; isClicked: boole
               textUnderlineOffset: "3px",
             }}
           >
-            Sketchbook
+            Vibe-coding
           </p>
         </div>
       </div>
@@ -252,7 +252,7 @@ function getOrbitKeyframes(startAngleDeg: number) {
   return frames;
 }
 
-function OrbitingShapes({ onPanelToggle, onClose, activePanel }: { onPanelToggle: (panel: 'sketchbook' | 'photography') => void; onClose: () => void; activePanel: 'sketchbook' | 'photography' | null }) {
+function OrbitingShapes({ onPanelToggle, onClose, activePanel }: { onPanelToggle: (panel: 'photography') => void; onClose: () => void; activePanel: 'photography' | null }) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const ctrl0 = useAnimationControls();
@@ -297,7 +297,7 @@ function OrbitingShapes({ onPanelToggle, onClose, activePanel }: { onPanelToggle
 
   const shapes = [
     <Group key={0} isHovered={hoveredIndex === 0} />,
-    <Group1 key={1} isHovered={hoveredIndex === 1} isClicked={activePanel === 'sketchbook'} />,
+    <Group1 key={1} isHovered={hoveredIndex === 1} />,
     <Group2 key={2} isHovered={hoveredIndex === 2} />,
     <Group3 key={3} isHovered={hoveredIndex === 3} />,
   ];
@@ -335,8 +335,7 @@ function OrbitingShapes({ onPanelToggle, onClose, activePanel }: { onPanelToggle
           onHoverEnd={handleHoverEnd}
           onClick={(e) => {
             e.stopPropagation();
-            if (i === 1) onPanelToggle('sketchbook');
-            else if (i === 3) onPanelToggle('photography');
+            if (i === 3) onPanelToggle('photography');
             else onClose();
           }}
         >
@@ -366,9 +365,9 @@ function PanelShell({ onClose, children }: { onClose: () => void; children: Reac
 }
 
 export default function OrbitingAnimation() {
-  const [activePanel, setActivePanel] = useState<'sketchbook' | 'photography' | null>(null);
+  const [activePanel, setActivePanel] = useState<'photography' | null>(null);
 
-  const handlePanelToggle = (panel: 'sketchbook' | 'photography') => {
+  const handlePanelToggle = (panel: 'photography') => {
     setActivePanel((v) => (v === panel ? null : panel));
   };
 
@@ -394,26 +393,6 @@ export default function OrbitingAnimation() {
       </div>
 
       <AnimatePresence mode="wait">
-        {activePanel === 'sketchbook' && (
-          <motion.div key="sketchbook" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 40 }} transition={{ duration: 0.4, ease: "easeOut" }} style={PANEL_STYLE}>
-            <PanelShell onClose={() => setActivePanel(null)}>
-              {[
-                { src: "/sketchbook-utopia.jpg", alt: "Utopia" },
-                { src: "/sketchbook-color.jpg", alt: "Color" },
-                { src: "/sketchbook-owl.jpg", alt: "Owl" },
-                { src: "/sketchbook-figure1.jpg", alt: "Figure 1" },
-                { src: "/sketchbook-figure2.jpg", alt: "Figure 2" },
-                { src: "/sketchbook-figure3.jpg", alt: "Figure 3" },
-              ].map(({ src, alt }) => (
-                <div key={src} style={{ width: "420px", flexShrink: 0, borderRadius: "8px", overflow: "hidden" }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={src} alt={alt} style={{ width: "100%", height: "auto", display: "block" }} />
-                </div>
-              ))}
-            </PanelShell>
-          </motion.div>
-        )}
-
         {activePanel === 'photography' && (
           <motion.div key="photography" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 40 }} transition={{ duration: 0.4, ease: "easeOut" }} style={PANEL_STYLE}>
             <PanelShell onClose={() => setActivePanel(null)}>
